@@ -1,0 +1,70 @@
+.panel {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 2rem;
+  color: white;
+  backdrop-filter: blur(3px);
+  font-family: Inter, sans-serif;
+  overflow-x: auto;
+}
+
+.title {
+  font-size: 15px;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+/* Divider after title */
+.mainDivider {
+  width: 1px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* KPI container for the right side */
+.kpiRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 26px;
+}
+
+/* KPI container */
+.kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Icon + label row */
+.kpiTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+/* KPI value */
+.kpiValue {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 4px;
+  transition: 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+/* Divider between KPIs */
+.kpiDivider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.12);
+}

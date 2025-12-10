@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+:root {
+  --color-background: #f9fafb;
+  --color-surface: #ffffff;
+  --color-primary: #111111;
+  --color-secondary: #6b7280;
+  --color-accent-yellow: #ffef4a;
+  --color-accent-green: #99f6e4;
+  --color-border: #e5e7eb;
+  --color-text: #111111;
+  --color-muted: #9ca3af;
+}
+
+:root.dark {
+  --color-background: #060606;
+  --color-surface: #1a1a1a;
+  --color-primary: #ffffff;
+  --color-secondary: #9ca3af;
+  --color-accent-yellow: #ffef4a;
+  --color-accent-green: #99f6e4;
+  --color-border: #374151;
+  --color-text: #f8fafc;
+  --color-muted: #6b7280;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  background-color: var(--color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+}
+
+hr.separator {
+  border-width: 0.5px;
+  border-color: #000;
+  border-style: solid;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #000;
+  background: #ccc;
+}
+
+::selection {
+  color: #000;
+  background: #ccc;
+}
+
+path.land {
+  fill: var(--color-surface);
+}
+
+/* Water Color */
+path.water {
+  fill: var(--color-muted);
+}
+
+/* Borders and Graticules */
+path.border,
+path.graticule {
+  stroke: var(--color-border);
+  stroke-width: 0.5;
+}
+
+/* Cargo Points - On Time */
+circle.cargo-on-time {
+  fill: var(--color-accent-green);
+}
+
+/* Cargo Points - Delayed */
+circle.cargo-delayed {
+  fill: #ef4444;
+}
+
+/* Cargo Points - In Transit */
+circle.cargo-in-transit {
+  fill: var(--color-primary);
+}
+
+/* Cargo Points - Delivered */
+circle.cargo-delivered {
+  fill: var(--color-accent-yellow);
+}
